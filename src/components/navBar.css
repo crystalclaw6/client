@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    background-color: #1F1F1F;
+    
+  }
+  .logo{
+    position: relative;
+    left: 1vw;
+    font-size: 40px;
+    padding: 5px 15px;
+    line-height: 50px;
+    color:rgba(216, 188, 116, 0.867);
+  }
+  .navbar{
+    overflow: hidden;
+    
+  
+    
+  }
+  .linkstyle{
+    text-decoration: none;
+    
+  }
+  ul {
+    list-style-type: none;
+  }
+  .nav{
+    float: left;
+    left: 10vw;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+    font-family: Courier New, monospace;
+    position: relative;
+  }
+  .nav_user{
+    float: right;
+    padding: 0px;
+    margin: 0px;
+    right: 20vw;
+    display: flex;
+    position: relative;
+  }
+  .nav li{
+  
+    text-align:center;
+    
+  }
+
+  .lk{
+    font-size: 20px;
+    padding: 5px 10px;
+    line-height: 45px;
+    color:rgba(216, 188, 116, 0.867);
+  }

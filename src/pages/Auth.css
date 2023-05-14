@@ -1,0 +1,75 @@
+.action_title{
+    margin-top: 5%;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    font-size: 3vw;
+    color: #50719C;
+}
+.action_form{
+   width: 50%;
+   font-size: 2.5vh;
+}
+.action_button{
+    height: 4vh;
+    width: 12vw;
+    border-radius: 30px;
+    margin-top: 10%;
+    background-color: #18181A;
+    color: #AFD2E6;
+    border: 1px solid #AFD2E6;
+    font-family: Courier New, monospace;
+    font-size: 1vw;
+}
+.action_wrap a{
+    font-family: Courier New, monospace;
+    margin: 5px 0px;
+    color: #A680A7;
+    font-size: 2vw;
+    width: 100%;
+    display: inline-block;
+}
+.input_form{
+margin-top: 10%;
+}
+.action_wrap{
+    width: 100%;
+    margin-top: 5%;
+}
+.auth_box{
+    font-family: Courier New, monospace;
+    background-color: #18181A;
+    border: 2px solid rgb(46, 42, 42);
+    border-radius: 30px;
+    box-shadow: 0px 3px 10px 0px rgba(40, 39, 39, 0.5);
+    position: relative;
+    width: 28vw;
+    height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    text-align: center;
+}
+.suggest{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    bottom: 5%;
+    color: #50719C;
+    width: 100%;
+}
+.suggest_link{
+    color: #AFD2E6;
+    text-decoration: none;
+}
+.suggest_link:hover{
+    border-bottom: 1px solid #AFD2E6;
+}
+/*#A680A7 сиреневый
+#2F7DC8 ярко голубой
+#66B8E7 светло голубой
+#18181A черный
+#1F1F1F графит
+#50719C самый темный синий
+#AFD2E6 светло голубой самый*/

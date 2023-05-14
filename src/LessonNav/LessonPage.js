@@ -1,3 +1,7 @@
+import { useState } from "react";
+import NavBar from "../components/NavBar";
+import CourseBar from "../components/CourseBar";
+import CodeEditor from "../CodeEditor/Code";
 const LessonPage = (props) =>{
     const [items_parts, set_item_parts] = useState([]);
 
@@ -15,7 +19,7 @@ const LessonPage = (props) =>{
           )
     }
     return(
-        <ul className="boxlesson">{items_parts}</ul>
+       <CodeEditor/>
     )
 }
 export default LessonPage;
