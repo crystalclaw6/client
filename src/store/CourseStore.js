@@ -1,10 +1,7 @@
 import {makeAutoObservable} from "mobx";
 export default class CourseStore{
     constructor(){
-        this._courses = [
-            {id:1, title: 'znakomstvo', description: 'hallo'},
-            {id:2, title: 'mewo', description: 'bilo'}
-        ]
+        this._courses = []
         this._completedCourses = [
             {id:1, userId:1, courseId:1, grade: 80},
             {id:2, userId:1, courseId:2, grade: 0}

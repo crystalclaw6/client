@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
-import { LOGIN_ROUTE, REGISTRATION_ROUTE } from "../utils/consts";
-import { Link, useLocation } from "react-router-dom";
+import { COURSES_ROUTE, LOGIN_ROUTE, REGISTRATION_ROUTE, SITE_ROUTE } from "../utils/consts";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import './Auth.css'
 import { login, registration } from "../http/userAPI";
 import { observer } from "mobx-react-lite";
@@ -8,21 +8,33 @@ import { Context } from "..";
 
 const Auth = observer(() =>{
     const {user} = useContext(Context)
+    const navigate = useNavigate()
     const location = useLocation()
     const isLogin = location.pathname === LOGIN_ROUTE
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const [isError, setError] = useState(false)
 
     const click = async () => {
-        let data;
-        if (isLogin){
-            data = await login(email, password);
+        try{
+            let data;
+            if (!email || !password){
+                setError(true)
+            }
+            if (isLogin){
+                
+                data = await login(email, password);
+            }
+            else{
+                data = await registration(email, password);
+            }
+            user.setUser(data)
+            user.setIsAuth(true)
+            navigate(COURSES_ROUTE)
+        }catch(e){
+            alert(e.response.data.message)
         }
-        else{
-            data = await registration(email, password);
-        }
-        user.setUser(data)
-        user.setIsAuth(true)
+        
         
     }
     return(
@@ -32,8 +44,8 @@ const Auth = observer(() =>{
             :
             <a className="action_title">Регистрация</a>}
             <div className="input_form">
-         <div className="action_wrap"><a>e-mail</a><input type="text" placeholder="Введите e-mail" className="action_form" value = {email} onChange={e => setEmail(e.target.value)}></input></div>
-         <div className="action_wrap"><a>пароль</a><input placeholder="Введите пароль" className="action_form" type = "password" value = {password} onChange={e => setPassword(e.target.value)}></input></div>
+         <div className="action_wrap"><a>e-mail</a><input type="email" placeholder="Введите e-mail" className={`action_form ${!email.length && isError ? 'error' : ''}`} value = {email} onChange={e => {setEmail(e.target.value); setError(false);}}></input></div>
+         <div className="action_wrap"><a>пароль</a><input placeholder="Введите пароль" className={`action_form ${!password.length && isError ? 'error' : ''}`} type = "password" value = {password} onChange={e => {setPassword(e.target.value); setError(false);}}></input></div>
          </div>
           <button className="action_button" onClick={click}>
           {isLogin ? 'Войти' : 'Зарегистрироваться' }</button>

@@ -1,0 +1,10 @@
+.course_item{
+    width: 50vw;
+    height: 10vh;
+    background-color: white;
+}
+.course_box_form{
+    display: inline-block;
+    position: relative;
+    left: 30%;
+}
