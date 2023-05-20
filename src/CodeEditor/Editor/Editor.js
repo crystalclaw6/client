@@ -4,6 +4,7 @@ import "ace-builds/src-noconflict/mode-javascript";
 import "ace-builds/src-noconflict/mode-css";
 import "ace-builds/src-noconflict/theme-tomorrow";
 import "ace-builds/src-noconflict/theme-monokai";
+import "ace-builds/src-noconflict/theme-twilight";
 import "ace-builds/src-noconflict/snippets/html";
 import "ace-builds/src-min-noconflict/ext-language_tools";
 import { useState } from "react";
@@ -25,7 +26,7 @@ const Editor = (props) =>{
             onChange={(value) => props.onCodeChange(value)}
             value = {props.value}
             width={"100%"}
-            height={"630px"}
+            height={"590px"}
             setOptions={{
             useWorker: false,
             enableBasicAutocompletion: true,

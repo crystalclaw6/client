@@ -1,8 +1,173 @@
+@font-face {
+    font-family: Caviar_Dreams; /* Гарнитура шрифта */
+    src: url(http://localhost:5000/Caviar_Dreams.ttf); /* Путь к файлу со шрифтом */
+   }
 .main_title{
     font-size: 2vw;
-    font-family: Courier New, monospace;
-    color:#AFD2E6;
+    font-family: Caviar_Dreams;
+    color:#50719C;
     text-align: center;
+    font-weight: 600;
     position: relative;
     margin-top: 2%;
 }
+.first_page{
+    margin-top: 1%;
+    height: 80vh;
+}
+.logo_box{
+    display: inline-block;
+    width: 40%;
+    margin-top: 7%;
+    position: relative;
+    left: 5%;
+    font-size: 1.5vw;
+    font-family: Courier New, monospace;
+    color:#AFD2E6;
+}
+.main_gif_geometry{
+    
+    margin-left: 5%;
+    position: absolute;
+    z-index: -1;
+    width: 40vw;
+    height: 80vh;
+}
+.main_logo{
+    
+    height: 100%;
+    width: 100%;
+    
+}
+.button_box{
+    text-align: center;
+    width: 100%;
+    position: relative;
+    
+}
+.main_button{
+    margin-top: 10%;
+    cursor: pointer;
+    height: 6vh;
+    
+    width: 15vw;
+    position: relative;
+    background: none;
+    border: 0.15vw solid #A680A7;
+    color: #A680A7;
+    font-size: 1.5vw;
+    font-family: Caviar_Dreams;
+}
+.main_button:hover{
+    height: 7vh;
+    width: 16vw;
+    font-size: 1.6vw;
+    margin-top: 9.5%;
+}
+.main_description{
+    color: #AFD2E6;
+    width: 50%;
+    float: right;
+    right: 5vw;
+    margin-top: 7%;
+    font-size: 1.9vw;
+    font-family: Caviar_Dreams;
+    text-align: justify;
+    position: relative;
+}
+.main_skills{
+    
+    width: 50%;
+    float: left;
+    left: 2vw;
+    position: relative;
+    font-size: 1.5vw;
+    font-family: Courier New, monospace;
+    text-align: justify;
+}
+.first_bracket{
+    color:rgba(216, 188, 116, 0.867);
+    left: 5%;
+    position: relative;
+    font-size: 2vw;
+}
+.second_bracket{
+    font-size: 2vw;
+    color: #A680A7;
+    position: relative;
+    left: 10%;
+}
+.img_box{
+    width: 50%;
+    position: relative;
+    display: inline-block;
+    margin-top: 5%;
+}
+.common_skills{
+    
+    color:#AFD2E6;
+    left: 15%;
+    position: relative;
+}
+.skills{
+    position: relative;
+    left: 20%;
+    color: #cd7940;
+}
+.third_bracket{
+    font-size: 2vw;
+    color: #50719C;
+    position: relative;
+    left: 20%;
+}
+.comma{
+    color: white;
+}
+.kitty_gif{
+    position: relative;
+    width: 55%;
+    float: right;
+    right: 5vw;
+    aspect-ratio: 16/9;
+}
+.second_text{
+    
+    color: rgba(216, 188, 116, 0.867);
+    font-size: 1.5vw;
+    font-family: Caviar_Dreams;
+    position: relative;
+}
+.second_text_box{
+    margin-top: 2%;
+    text-align: justify;
+    width: 60%;
+    float: right;
+    right: 5%;
+    position: relative;
+}
+.skill_box{
+display: inline-block;
+}
+.second_box{
+    margin-top: 7%;
+    float: right;
+    position: relative;
+    display: inline;
+}
+.second_page{
+    display: inline-block;
+    margin-top: 5%;
+}
+.html_img{
+    width: 20%;
+    aspect-ratio: 4/3;
+    float: left;
+    left: 10%;
+    position: relative;
+}
+@media (max-width: 900px) {
+    .main_button{
+        max-height: 30px;
+    }
+     /* applied in resolution < = 320px (smartphone) */
+    }

@@ -13,3 +13,14 @@ export const fetchOneCourse = async (id) => {
     const {data} = await $host.get('api/course/' + id)
     return data
 }
+/*
+Student.findOne({where: {name: "Tom"}})
+.then(student=>{
+    if(!student) return;
+    student.getCourses().then(courses=>{
+        for(course of courses){
+            console.log(course.name);
+        }
+    });
+});
+*/

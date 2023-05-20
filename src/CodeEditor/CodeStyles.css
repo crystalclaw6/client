@@ -19,7 +19,7 @@
     height: 100%;
 }
 .columnEdit{
-    
+    height: 680px;
     display: flex;
     flex-grow: 1;
     flex-direction: column;
@@ -33,6 +33,7 @@
     border-bottom-style: solid;
 }
 .columnView{
+    height: 664px;
     flex-basis: 46.79%;
     display: flex;
     flex-grow: 1;
@@ -69,7 +70,6 @@
   
 .display{
     width: 56vw;
-    height: calc(100vh - 100px);
     float: right;
 }
 .empty{
@@ -105,9 +105,8 @@
     margin: 0 auto;
     box-shadow: 0 0 20px rgb(0 0 0 / 10%);
     position: relative;
-    height: calc(100vh - 45px);
-    min-height: 680px;
-    max-height: 1000px
+    height: 590px;
+    
   
 }
 .editor{

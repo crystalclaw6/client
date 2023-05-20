@@ -1,10 +1,59 @@
 .course_item{
-    width: 50vw;
+    width: 100%;
+    cursor: pointer;
     height: 10vh;
-    background-color: white;
+    border-bottom: 2px dashed rgba(79, 78, 73, 0.867);
+    border-top: 2px dashed rgba(62, 61, 57, 0.867);
+}
+.course_item:hover{
+    background-color: rgba(62, 61, 57, 0.867);
+}
+.marker{
+    width: 3%;
+    aspect-ratio: 1/1;
+    position: relative;
 }
 .course_box_form{
-    display: inline-block;
+    margin-top: 3%;
     position: relative;
-    left: 30%;
+    left: 25%;
+    width: 70%;
+}
+.course_box{
+    width: 100%;
+    height: auto;
+}
+.task_title{
+    position: relative;
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 3%;
+    font-size: 2vw;
+    font-family: Caviar_Dreams;
+    color: rgba(216, 188, 116, 0.867);
+}
+.course_description{
+    margin-top: 3%;
+    width: 60%;
+    height: auto;
+    left: 25%;
+    position: relative;
+    font-size: 2vw;
+    font-family: Caviar_Dreams;
+    color:#AFD2E6;
+    
+}
+.start_button{
+    margin-top: 5%;
+    cursor: pointer;
+    height: 6vh;
+    left: 25%;
+    width: 15vw;
+    position: relative;
+    background: none;
+    margin-left: auto;
+    border: 0.15vw solid #A680A7;
+    color: #A680A7;
+    font-size: 2vw;
+    font-family: Caviar_Dreams;
 }

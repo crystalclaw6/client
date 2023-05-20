@@ -31,7 +31,7 @@ const CodeEditor = () =>{
     const [color, setColor] = useState('white')
     function changeTheme(){
         if (theme === 'tomorrow'){
-            setTheme('monokai');
+            setTheme('twilight');
             setColor('black');
         }
         else{

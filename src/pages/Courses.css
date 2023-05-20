@@ -1,0 +1,20 @@
+
+.course_info_box{
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 20%;
+}
+.course_chapter{
+    font-size: 2vw;
+    font-family: Caviar_Dreams;
+    color:#50719C;
+    font-weight: 600;
+}
+.course_info_title{
+    font-size: 3vw;
+    font-weight: 600;
+    font-family: Caviar_Dreams;
+    color:#18568f ;
+}
